@@ -9,8 +9,8 @@ jobs:
     runs-on: self-hosted
     timeout-minutes: 5
 
-    ##container:
-      ##image: ${{ matrix.image }}
+    container:
+      image: ${{ matrix.image }}
       # credentials:
       #   username: ${{ github.actor }}
       #   password: ${{ secrets.READ_PACKAGES_TOKEN }}
@@ -22,6 +22,6 @@ jobs:
     
     steps:
       - run: |
-            docker pull ghcr.io/jcansdale/gpr;
-            docker rmi ghcr.io/jcansdale/gpr;
+            echo "Hello, World!";
+            
 
