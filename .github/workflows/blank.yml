@@ -1,8 +1,8 @@
 on:
   push:
   workflow_dispatch:
-  schedule:
-    - cron:  '0,30 * * * *'
+  #schedule:
+   # - cron:  '0,30 * * * *'
   
 jobs:
   build:
